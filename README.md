@@ -1,29 +1,5 @@
-# web-dev-starter
+Accessibility Lab Answers
 
-This is a starter project for web development with no frameworks and minimal
-dependencies. It is intended to be a starting point for web development projects
-that are written in plain HTML, CSS, and JavaScript.
+For this lab I went through the site and fixed a bunch of issues that made it hard to use. I updated the color scheme since the original green background and dark text failed contrast checks, switching it to black text on a white background so it’s actually readable. I also restructured the content using proper headings and paragraphs, and turned the nav bar into a real <nav> element so keyboard navigation and screen readers work the way they should. Images now have descriptive alt text, and the audio file includes a transcript with download links so both deaf users and people on older browsers can still access it.
 
-## Getting Started
-
-To get started, clone this repository and run the following commands:
-
-```bash
-npm install
-```
-This will install the necessary dependencies for the project.
-
-## Development
-
-It is recommended to use the VSCode Live Server extension to run the project
-locally. This will allow you to see changes in real-time as you make them. There
-is no need to run a build process or refresh the page manually. Additionally,
-you do not need to setup a local server to run the project.
-
-## Testing
-
-To run the tests for the project, run the following command:
-
-```bash
-npm test
-```
+I fixed the forms by adding proper labels (including a hidden label on the search bar) so they’re announced correctly, and I rewired the show/hide comments button so it’s fully keyboard accessible with ARIA attributes. The table was also updated with a caption, headers, and scope attributes so rows and columns can be understood with assistive tech. On top of that I added focus outlines and cleaned up the heading structure to make the page easier to navigate overall.
